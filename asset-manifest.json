@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gourmet-recipes-hub-project/static/css/main.0187b6d9.css",
-    "main.js": "/gourmet-recipes-hub-project/static/js/main.868817d0.js",
+    "main.js": "/gourmet-recipes-hub-project/static/js/main.d7158ca5.js",
     "static/media/homeimg3.png": "/gourmet-recipes-hub-project/static/media/homeimg3.1938f976b5750bc441d3.png",
     "static/media/aboutimage.png": "/gourmet-recipes-hub-project/static/media/aboutimage.459c9bc091766489893f.png",
     "index.html": "/gourmet-recipes-hub-project/index.html",
     "main.0187b6d9.css.map": "/gourmet-recipes-hub-project/static/css/main.0187b6d9.css.map",
-    "main.868817d0.js.map": "/gourmet-recipes-hub-project/static/js/main.868817d0.js.map"
+    "main.d7158ca5.js.map": "/gourmet-recipes-hub-project/static/js/main.d7158ca5.js.map"
   },
   "entrypoints": [
     "static/css/main.0187b6d9.css",
-    "static/js/main.868817d0.js"
+    "static/js/main.d7158ca5.js"
   ]
 }
