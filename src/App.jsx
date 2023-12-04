@@ -6,13 +6,15 @@ import About from './pages/About/About'
 import Recipies from './pages/Recipies/Recipies'
 import RecipieDisplay from './pages/Recipies/RecipieDisplay'
 
-import { BrowserRouter , Routes , Route , Link } from 'react-router-dom';
+import { BrowserRouter , HashRouter, Routes , Route , Link } from 'react-router-dom';
 
 const App = () => {
-  // <script src="../"></script>
+  
   return (
 
-    <BrowserRouter>
+    // Replacing hashrouter with browser router for github pages
+
+    <HashRouter>
 
       <Routes>
 
@@ -27,7 +29,7 @@ const App = () => {
 
       </Routes>
     
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
