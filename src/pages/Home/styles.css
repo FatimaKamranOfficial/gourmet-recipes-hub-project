@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+/* styling the home section */
+.home {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px;
+    height: 40rem;
+}
+
+/* styling the home section content h1 and p*/
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
+}
+
+/* styling the home section h1*/
+.home-h1 {
+    font-weight: bold;
+    padding: 20px 0px;
+    font-size: 2.3rem;
+}
+
+/* styling the home section h1 span*/
+
+.home-h1 span {
+    color: #d50855;
+}
+
+/* styling the home section p*/
+.home-p {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 42rem;
+}
+
+/* styling the home section image */
+.home-img {
+    margin: auto;
+    display: flex;
+}
+
+
+/* styling the home section typewriter*/
+.Typewriter {
+    display: inline;
+    color: #d50855;
+}
+
+
+/* styling the home section heart icon*/
+.heart {
+    fill: red;
+}
+
+/* adding media queries */
+
+@media screen and (max-width: 1295px) {
+
+    .home-content {
+        margin: 0px 56px;
+    }
+
+}
+
+@media screen and (max-width: 1249px) {
+
+    .home-h1 {
+        font-size: 2rem;
+    }
+
+    .home-p {
+        font-size: 1.1rem;
+    }
+
+    .home-img {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    .home {
+        height: 30rem;
+    }
+
+    .home-p {
+        width: 35rem;
+    }
+
+}
+
+@media screen and (max-width: 1067px) {
+    .home-content {
+        margin: auto;
+    }
+
+    .home-img {
+        width: 23rem;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .home-h1 {
+        font-size: 1.7rem;
+    }
+
+    .home-p {
+        font-size: 1rem;
+    }
+
+    .home-img {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .home-p {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .home-h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-p {
+        font-size: 15px;
+        width: 25rem;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .home {
+        flex-direction: column;
+        padding: 25px 0px;
+    }
+
+    .home-h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-p {
+        font-size: 16px;
+        width: 30rem;
+    }
+
+    .home-img {
+        padding: 25px 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .home-content {
+        margin: 0px;
+    }
+
+    .home-h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .home-p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .home-p {
+        font-size: 14px;
+        width: 25rem;
+    }
+
+}
+
+@media screen and (max-width: 405px) {
+    .home-h1 {
+        font-size: 1.3rem;
+    }
+
+    .home-p {
+        font-size: 13px;
+        width: 21rem;
+    }
+
+
+}

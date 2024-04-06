@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    background-image: linear-gradient(90deg, #e8bdec94, #eedd9894);
+}
+
+
+
+/* styling the header section in ./components/header.jsx */
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo styling */
+
+.logo {
+    display: flex;
+    padding: 20px;
+
+}
+
+/* logo anchor tag styling */
+
+.logo>a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* logo anchor tag on hover styling */
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+
+/* nav bar styling */
+
+nav {
+    display: flex;
+    margin: 0 25px;
+}
+
+/* nav bar anchor tag styling */
+
+nav>a {
+    text-decoration: none;
+    padding: 0 25px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px
+}
+
+/* nav bar anchor tag on hover styling */
+
+nav a:hover {
+    color: #d50855;
+}
+
+/* nav bar for small devices styling */
+
+.nav-mobile {
+    display: none;
+}
+
+/* nav bar to fit entire screen styling */
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #efdcf0;
+    flex-direction: column;
+    transition: 0.5s ease;
+    z-index: 5;
+}
+
+/* nav close icon styling */
+
+.nav-overlay .overlay-close {
+    font-size: 27px;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* nav bar for small devices links styling */
+.nav-mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav bar for small devices anchor tag styling */
+
+.nav-mobile-links>a {
+    text-decoration: none;
+    margin: 7rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* nav bar for small devices anchor tag on hover styling */
+
+.nav-mobile-links a:hover {
+    color: #d50855;
+}
+
+
+/* styling the footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 15vh;
+    font-family: 'Roboto', sans-serif; 
+    
+    
+}
+
+/* styling the footer heading */
+
+.footer h3{
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 10px 0px;
+}
+
+.footer-icons{
+    padding: 10px 0px;
+}
+
+.icon{
+    width: 50px;
+}
+
+
+/* inserting media query for mobile and tablet devices for our header and footer */
+@media screen and (max-width: 1150px) {
+    nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .footer h3{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .logo {
+        padding: 14px;
+    }
+}
+

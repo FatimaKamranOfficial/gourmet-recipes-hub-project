@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Recipies.jsx styling */
+
+.recipies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px 0px;
+}
+
+.recipies h1 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.recipies h1 span {
+    color: #d50855;
+}
+
+.recipies-form {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.recipies-form input {
+    padding: 7px;
+    width: 18rem;
+    margin: 10px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.recipies-form button {
+    padding: 7px;
+    margin: 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #333131;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+}
+
+/* RecipiesCard.jsx styling */
+
+.recipie-card {
+    width: 300px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    justify-items: center;
+    border-radius: 5px;
+}
+
+/* .recipie-card-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    justify-items: center;
+    border-radius: 5px;
+} */
+
+.recipie-card-info {
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.recipie-card-info img {
+    width: 15rem;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.recipie-card-info h3 {
+    color: #d50855;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.recipie-card-info button {
+    background-color: #333131;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* RecipieDisplay.jsx styling */
+
+.display-recipe {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px 0px;
+    justify-content: center;
+    height: auto;
+}
+
+.left {
+    display: flex;
+    padding: 0px 20px;
+}
+
+.left img {
+    width: 25rem;
+    border-radius: 10px;
+    height: 25rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right h2 {
+    color: #d50855;
+}
+
+.right .btns {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+}
+
+.btns button {
+    padding: 7px;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #333131;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.display {
+    display: flex;
+    padding: 0px 20px;
+    width: 500px;
+    /* height: 450px; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.display ol {
+    list-style: circle;
+}
+
+.display ol li{
+    padding: 3px 0px;
+}
+
+.content {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+
+
+
+
+
+
+/* adding media queries */
+
+@media screen and (max-width: 990px) {
+    .card {
+        width: 660px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .display-recipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .display{
+        justify-content: center;
+    }
+
+    .right {
+        align-items: center;
+    }
+
+    .right h2 {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+
+    .recipies h1 {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        width: 350px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .left img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .right h2 {
+        font-size: 1.2rem;
+    }
+
+    .btns button {
+        padding: 5px;
+    }
+
+    .display {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .left img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .recipies h1 {
+        font-size: 1.3rem;
+    }
+
+    .recipies-form input {
+        width: 12rem;
+    }
+
+    .recipie-card-info h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .left img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .btns button {
+        padding: 3px;
+        margin: 2px;
+    }
+
+    .display {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .btns button {
+        padding: 2px;
+    }
+
+    .display{
+        width: 350px;
+    }
+}
