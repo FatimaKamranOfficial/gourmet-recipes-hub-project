@@ -10,4 +10,5 @@ It contains the use of following functionalities:
 7. It contains 3 pages namely Home, About and Recipes
 8. It has a search bar for fetching any recipe
 9. The user can view the instructions, ingredients and cooking time of the recipe
-10. The website is fully responsive
+
+The website is fully responsive and is deployed to github pages
